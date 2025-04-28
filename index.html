@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deer Population Map</title>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <h1>Deer Population in Minnesota</h1>
   <div id="map"></div>
 
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  ></script>
+  <!-- Footer Popup -->
+  <div id="footerPopup" class="footer-popup">
+    <div class="footer-header">
+      <button id="closeFooter" class="close-button">&times;</button>
+    </div>
+    <div class="footer-content">
+      <p>Data Source: <div>
+        <p>Deer Population Data - Minnesota Department of Natural Resources <a href="https://www.dnr.state.mn.us/mammals/deer/management/statistics.html">CLick Here</a></p>
+        <p>Crop Data - Minnesota Geospatial Commons <a href="https://gisdata.mn.gov/dataset/agri-cropland-data-layer-2023">CLick Here</a></p>
+        <p>DPA Shapefile - Minnesota Geospatial Commons <a href="https://gisdata.mn.gov/dataset/bdry-deer-permit-areas">CLick Here</a> </p>
+      </div></p>
+      <p>Map created by Wesley Keller</p>
+      <p>Contact: <a href="mailto:weskeller19@hotmail.com">weskeller19@hotmail.com</a></p>
+      <p>All rights reserved.</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/map.js"></script>
 </body>
+
 </html>
